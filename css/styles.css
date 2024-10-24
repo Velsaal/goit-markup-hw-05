@@ -139,7 +139,12 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 .input-checkbox{
+    font-weight: 400;
     cursor: pointer;
+
+}
+.input-checkbox:checked + .label-checkbox > .label-span {
+    background-color:#404bbf; border: none; fill:#f4f4fd;
 }
 .input-svg{
     position: absolute;
@@ -147,6 +152,10 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.input-svg:focus{
+    fill: #f4f4fd;
+background-color: #404bbf;
 }
 .comment-text{
     font-weight: 400;
@@ -202,6 +211,8 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-send{
     font-weight: 500;
