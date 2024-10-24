@@ -126,6 +126,7 @@ margin-bottom: 4px;
 background-color: transparent;
 }
 .modal-item{
+    margin-bottom: 8px;
     margin-bottom: 16px;
 }
 .modal-input{
@@ -267,7 +268,6 @@ margin-bottom: 16px;
     color: #fff;
     display: block;
     background-color: transparent;
-    background-color:  #2e2f42;
     border: 1px solid #fff;
 border-radius: 4px;
 width: 264px;
